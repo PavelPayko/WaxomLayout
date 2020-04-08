@@ -1,0 +1,18 @@
+.font(@fontName, @weight, @style) {
+    @font-face {
+        font-family: '@{fontName}-@{weight}';
+        src:url('../fonts/@{fontName}/@{fontName}-@{weight}.ttf' ) format("truetype");
+        font-weight: @weight;
+        font-style: @style;
+    }
+
+}
+body {
+    .font(Raleway, Regular, normal);
+    .font(Raleway, Medium, normal);
+    .font(Raleway, Regular, normal);
+    .font(Raleway, SemiBold, normal);
+    .font(Raleway, ExtraBold, normal);
+    .font(Montserrat, Light, normal);
+
+}
