@@ -43,23 +43,32 @@ body {
         flex-wrap: wrap;
         padding: 0 225px;
         &-logo {
-            width: 180px;
+            width: 183px;
             height: 56px;
             margin: 0;
             display: flex;
+            align-items: center;
+            color: #fff;
             text-decoration: none;
             &-svg { 
-                fill: #fff;
+                fill: currentColor;
             }
             &-text {
-                color: #fff;
-                margin: auto -2px;
+                margin: 0;
                 text-decoration: none;
-                .txt(Raleway-Regular, 34px, 300)
+                text-align: right;
+                .txt(Raleway-Regular, 34px, 300);
             }
+            &:hover {
+                color: #c7b299;
+            }
+            &:active {
+                color: #fff;
+            }
+           
         }
         &-nav{
-            width: 876px;
+            width: 873px;
             &-list {
                 list-style-type: none;
                 display: flex;
@@ -78,8 +87,7 @@ body {
                         .txt(Montserrat-Light, 14px, 300);
                         color: #fff;
                         &:hover {
-                            color: #c7b299
-                        }
+                            color: #c7b299;                        }
                         &:active {
                             color: #fff;
                         }
@@ -110,6 +118,14 @@ body {
             }
             &:nth-child(1)::after {
                 transform: rotate(225deg);
+            }
+            &:hover::after {
+                border-top: 2px solid @lightgray;
+                border-right: 2px solid @lightgray;
+            }
+            &:active::after {
+                border-top: 2px solid #d3c1ad;
+                border-right: 2px solid #d3c1ad;
             }
         }
         &-content {
@@ -193,10 +209,10 @@ body {
         fill: #fff;
         fill-rule: evenodd ;
         &:hover {
-            stroke: #fff;
+            fill: #c7b299;
         }
         &:active {
-            stroke: none;
+            fill: #fff;
         }
     }
 }
@@ -227,16 +243,15 @@ body {
 .search-svg {
     fill: #fff;
     &:hover {
-        stroke: #fff;
+        fill: #c7b299;
     }
     &:active {
-        stroke: none;
+        fill: #fff;
     }
 }
 
-.main {}
-
 .services {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -249,9 +264,17 @@ body {
         align-items: center;
         text-align: center;
         margin: 0 33px 0 0;
-        position: relative;
+        justify-content: space-between;
+        text-decoration: none;
         &:nth-child(4) {
             margin: 0;
+        }
+        &::after {
+            display: block;
+            content: "";
+            border-bottom: 3px solid #f1eee9;
+            width: 70px;
+            color: #f1eee9;
         }
         &:hover .services-item-icon {
             fill: #c7b299;
@@ -260,30 +283,26 @@ body {
             color: #c7b299;
         }
         &:hover::after {
-            display: block;
-            content: "";
             border-bottom: 3px solid #c7b299;
-            width: 70px;
-            color: #c7b299;
-            position: absolute;
-            // align-self: end;
-            bottom: 0;
-            left: 100px;            
+            color: #c7b299;          
         }
         &-icon {
+            width: 49px;
+            height: 49px;
             fill: @gray;
 
         }           
         &-title {
             color: @gray;
             .txt(Raleway-SemiBold, 22px, 500);
-            margin: 25px 0 0 0;
+            margin: 0;
         }
         &-content {
             color: @lightgray;
             .txt(Montserrat-Light, 14px, 200);
             line-height: 24px;
-            margin: 10px 0 0 0;
+            margin: 0;
         }
     }
 }
+

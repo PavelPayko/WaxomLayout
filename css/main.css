@@ -55,25 +55,33 @@ body {
   padding: 0 225px;
 }
 .main-header-nav-wrp-logo {
-  width: 180px;
+  width: 183px;
   height: 56px;
   margin: 0;
   display: flex;
+  align-items: center;
+  color: #fff;
   text-decoration: none;
 }
 .main-header-nav-wrp-logo-svg {
-  fill: #fff;
+  fill: currentColor;
 }
 .main-header-nav-wrp-logo-text {
-  color: #fff;
-  margin: auto -2px;
+  margin: 0;
   text-decoration: none;
+  text-align: right;
   font-family: Raleway-Regular;
   font-size: 34px;
   font-weight: 300;
 }
+.main-header-nav-wrp-logo:hover {
+  color: #c7b299;
+}
+.main-header-nav-wrp-logo:active {
+  color: #fff;
+}
 .main-header-nav-wrp-nav {
-  width: 876px;
+  width: 873px;
 }
 .main-header-nav-wrp-nav-list {
   list-style-type: none;
@@ -125,6 +133,14 @@ body {
 }
 .main-header-content-wrp-control:nth-child(1)::after {
   transform: rotate(225deg);
+}
+.main-header-content-wrp-control:hover::after {
+  border-top: 2px solid #8c8c8c;
+  border-right: 2px solid #8c8c8c;
+}
+.main-header-content-wrp-control:active::after {
+  border-top: 2px solid #d3c1ad;
+  border-right: 2px solid #d3c1ad;
 }
 .main-header-content-wrp-content {
   display: flex;
@@ -215,10 +231,10 @@ body {
   fill-rule: evenodd ;
 }
 .basket-svg:hover {
-  stroke: #fff;
+  fill: #c7b299;
 }
 .basket-svg:active {
-  stroke: none;
+  fill: #fff;
 }
 .search {
   height: 24px;
@@ -248,12 +264,13 @@ body {
   fill: #fff;
 }
 .search-svg:hover {
-  stroke: #fff;
+  fill: #c7b299;
 }
 .search-svg:active {
-  stroke: none;
+  fill: #fff;
 }
 .services {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -267,10 +284,18 @@ body {
   align-items: center;
   text-align: center;
   margin: 0 33px 0 0;
-  position: relative;
+  justify-content: space-between;
+  text-decoration: none;
 }
 .services-item:nth-child(4) {
   margin: 0;
+}
+.services-item::after {
+  display: block;
+  content: "";
+  border-bottom: 3px solid #f1eee9;
+  width: 70px;
+  color: #f1eee9;
 }
 .services-item:hover .services-item-icon {
   fill: #c7b299;
@@ -279,16 +304,12 @@ body {
   color: #c7b299;
 }
 .services-item:hover::after {
-  display: block;
-  content: "";
   border-bottom: 3px solid #c7b299;
-  width: 70px;
   color: #c7b299;
-  position: absolute;
-  bottom: 0;
-  left: 100px;
 }
 .services-item-icon {
+  width: 49px;
+  height: 49px;
   fill: #555555;
 }
 .services-item-title {
@@ -296,7 +317,7 @@ body {
   font-family: Raleway-SemiBold;
   font-size: 22px;
   font-weight: 500;
-  margin: 25px 0 0 0;
+  margin: 0;
 }
 .services-item-content {
   color: #8c8c8c;
@@ -304,5 +325,5 @@ body {
   font-size: 14px;
   font-weight: 200;
   line-height: 24px;
-  margin: 10px 0 0 0;
+  margin: 0;
 }
