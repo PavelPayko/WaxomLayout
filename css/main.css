@@ -44,8 +44,6 @@ body {
   width: 1920px;
   margin: 0 auto;
 }
-<<<<<<< Updated upstream
-=======
 .btn {
   width: 170px;
   height: 50px;
@@ -73,7 +71,6 @@ body {
   line-height: 47px;
   text-transform: uppercase;
 }
->>>>>>> Stashed changes
 .main-header {
   background: #555555 url(../img/header-bg.jpg) no-repeat center;
   background-size: cover;
@@ -370,8 +367,6 @@ body {
   line-height: 24px;
   margin: 0;
 }
-<<<<<<< Updated upstream
-=======
 .realization-ideas {
   box-sizing: border-box;
   display: flex;
@@ -751,4 +746,3 @@ body {
   padding: 0;
   margin: 0 0 15px 0;
 }
->>>>>>> Stashed changes
