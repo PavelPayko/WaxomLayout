@@ -28,6 +28,35 @@ body {
     width: @mainWidth;
     margin: 0 auto;
 }
+<<<<<<< Updated upstream
+=======
+
+.btn {
+    width: 170px;
+    height: 50px;
+    border-radius: 3px;
+    box-shadow: inset 0px -3px 0 0 #736357;
+    background-color: #998675;
+    text-decoration: none;
+		padding: 0;
+		border: none;
+		outline: none;
+    &:hover {
+        box-shadow: inset 0px 0px 5px 5px #736357;
+    }
+    &:active {
+        box-shadow: inset 0px -3px 0 0 #736357;
+    }
+    &-title {
+    text-align: center;
+    margin: auto;
+    .txt(Raleway, 14px, 800);
+    color: #fff;
+    line-height: 47px;
+    text-transform: uppercase;
+    }
+}
+>>>>>>> Stashed changes
 .main-header {
     background: @gray url(../img/header-bg.jpg) no-repeat center;
     background-size: cover;
@@ -43,6 +72,7 @@ body {
         flex-wrap: wrap;
         padding: 0 225px;
         &-logo {
+						outline: none;
             width: 183px;
             height: 56px;
             margin: 0;
@@ -80,6 +110,7 @@ body {
                 &-item {
                     margin: auto 14px;
                     &-link {
+											outline: none;
                         text-decoration: none;
                         display: block;
                         line-height: 56px;
@@ -104,6 +135,7 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
         &-control {
+					outline: none;
             width: 40px;
             height: 73px;
             margin: 115px 22px 0 10px;
@@ -187,7 +219,8 @@ body {
             background-color: @gray;
             margin: auto 5px;
             border: 2px solid transparent;
-            border-radius: 50%;
+						border-radius: 50%;
+						outline: none;
             &:hover {
                 background-color: transparent;
                 border: 2px solid #d3c1ad;
@@ -204,6 +237,7 @@ body {
     margin: 0;
     padding: 0;
     &-svg {
+			outline: none;
         width: 24px;
         height: 24px;
         fill: #fff;
@@ -241,7 +275,8 @@ body {
     }
 }
 .search-svg {
-    fill: #fff;
+		fill: #fff;
+		outline: none;
     &:hover {
         fill: #c7b299;
     }
@@ -265,7 +300,8 @@ body {
         text-align: center;
         margin: 0 33px 0 0;
         justify-content: space-between;
-        text-decoration: none;
+				text-decoration: none;
+				outline: none;
         &:nth-child(4) {
             margin: 0;
         }
@@ -305,4 +341,368 @@ body {
         }
     }
 }
+<<<<<<< Updated upstream
 
+=======
+.realization-ideas {   
+		box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+		align-content: center;
+		padding: 80px 0 0 0;
+    &__title-wrp{
+       display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
+    &__title{
+        width: 100%;
+        font-family: Raleway-SemiBold;
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        color: @gray
+    }
+    &__text{
+				font-family: Montserrat-Light;
+        font-size: 16px;
+			  line-height: 28px;
+        text-align: center;
+				padding: 0 580px;
+				margin: 12px 0 32px 0;
+    }
+    &__content{
+        width: 1220px;
+        height: 482px;
+        margin: 0 auto;
+        position: relative;
+        &-img {
+            width: 770px;
+            height: 400px;
+            background-color: #4e3427;
+            &:nth-child(1) {
+                z-index: 0;
+                position: absolute;
+                bottom: 0;
+            }
+            &:nth-child(2) {
+                height: 482px;
+                z-index: 2;
+                position: absolute;
+                left: 230px;
+            }
+            &:nth-child(3) {
+                z-index: 1;
+                position: relative;
+                left: 460px;
+                bottom: -83px;
+                &:hover :nth-child(2) {
+                    height: 400px;
+                }
+            }  
+            &:hover {
+                z-index: 4;
+                height: 482px;
+                bottom: 0;
+                
+            }
+            
+        }
+         
+    }
+
+}
+.wordpress {
+	box-sizing: border-box;
+	display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, #211b19, #4e3427);
+  padding: 50px 375px;
+  &__title {
+      .txt(Raleway-Regular, 28px, normal);
+      color: #fff;
+      &-logo {
+          color: #c7b299;
+      }
+  }
+  &__text {
+      .txt(Montserrat-Light, 18px, 300);
+			color: #615855;
+			margin: 0;
+  }
+}
+.latest-projects {
+	box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	padding: 75px 375px;
+    &__header {
+        width: 760px;
+        margin: 0 auto;
+        text-align: center;
+        &-title {
+            .txt(Raleway-SemiBold, 30px, 500);
+			color: @gray;
+			display: block;
+			margin: 0 0 15px 0;  
+        }
+        &-text {
+            .txt(Montserrat-Light, 16px, 200);
+			color: @lightgray;
+			margin: 0 0 35px 0;
+			line-height: 24px;
+            
+        }
+    }  
+    &__nav {
+        display: flex;
+		justify-content: center;
+		margin: 0;
+        &-link {
+			text-decoration: none;
+			border-radius: 3px;
+			border: solid 1px #ebebeb;
+			box-sizing: border-box;
+			padding: 8px 20px;
+			margin: 0 5px;
+			.txt(Montserrat-Light, 14px, 300);
+			color: @lightgray;
+            outline: none;
+            &:hover {
+                background-color: #998675;
+                color: #fff;
+            }
+
+        }
+    }
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin: 40px auto;
+		&-wrp {
+			width: 370px;
+			height: 337px;
+			margin: 0 30px 30px 0;
+            position: relative;
+            &:hover {
+                & .latest-projects__content-img{
+                        filter: brightness(30%);
+                }
+                & .latest-projects__content-link{
+                    display: block;
+                }
+                & .latest-projects__content-title-wrp {
+                    background-color: #362f2d;
+                } 
+            }   
+            &:active {
+                & .latest-projects__content-img {
+                    filter: none;
+                }
+                & .latest-projects__content-title-wrp {
+                    background-color: #fff;
+                }
+            }
+			&:nth-child(3) {
+				margin-right: 0;
+			}
+			&:nth-child(6) {
+				margin: 0;
+			}
+			&:nth-child(4) {
+				margin-bottom: 0;
+			}
+			&:nth-child(5) {
+				margin-bottom: 0;
+            }
+        }
+		&-item {
+			text-decoration: none;
+			outline: none;
+        }
+        &-title-wrp {
+            padding: 30px;
+            text-align: left;
+            text-decoration: none;
+        }
+        &-title {
+            .txt(Raleway-Medium, 20px, 500);
+            color: #c7b299;
+            text-decoration: none;
+        }
+        &-desc {
+            .txt(Montserrat-Light, 14px, 300);
+            color: #d1d1d1;
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+        }
+        &-box {
+            margin: 0;
+        }
+        &-img {
+            vertical-align: bottom;
+        }
+        &-link {
+            fill: #fff;
+            text-decoration: none;
+            display: none;
+            position: absolute;
+            &_left {
+                top: 106px;
+                left: 146px;
+            }
+            &_right {
+                top: 106px;
+                right: 146px;
+            }
+            &:hover{
+             fill: #c7b299;
+            }
+            &:active{
+                fill: #fff;
+            }
+        }
+        
+    }
+}
+
+.video {
+	box-sizing: border-box;
+	width: 100%;
+	height: 705px;
+	background-color: #fff;
+	position: relative;
+	&-file {
+		box-sizing: border-box;
+	}
+	&__infobox {
+		width: 552px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		top: 210px;
+		left: 684px;
+		text-align: center;
+		&-play {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color:rgba(0,0,0,0.2);
+            margin: 0 0 40px 0;
+            padding: 15px;
+            box-sizing: border-box;
+		}
+		&-icon-play {
+			fill: #fff;
+		}
+		&-title {
+			.txt(Raleway-Medium, 30px, 500);
+			color: #fff;
+			margin: 0 0 15px 0;
+		}
+		&-text {
+			.txt(Montserrat-Light, 16px, 300);
+			color: #fff;
+			margin: 0 0 40px 0;
+			line-height: 24px
+		}
+		&-time {
+			.txt(Montserrat-Regular, 14px, normal);
+			color: #c7b299;
+		}
+	}
+}
+.mobile {
+	box-sizing: border-box;
+	padding: 80px 0 0 423px;
+	display: flex;
+	&__img-box {
+		margin: 0;
+	}
+	&__img {
+		vertical-align: bottom; 
+	}
+}
+.mobile__content {
+	background-color: #fff;
+	background-image: url(../img/);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0;
+	margin: 110px 0 0 30px;
+	&-title {
+		.txt(Raleway-SemiBold, 30px, 600);
+		color: @gray;
+		margin: 0 0 25px 0;
+	}
+	&-text {
+		.txt(Montserrat-Light, 16px, 300);
+		color: @lightgray;
+		margin: 0 0 30px 0;
+		width: 657px;
+		line-height: 28px;
+	}
+	&-list {
+		margin: 0 0 0 50px;
+		padding: 0 0 0 50px;
+		list-style-type: none;
+		&-item {
+			position: relative;
+			.txt(Montserrat-Light, 16px, 300);
+			color: @lightgray;
+			line-height: 32px;
+			&::before {
+				content: "";
+				display: block;
+				width: 21px;
+				height: 21px;
+				background-image: url(../img/li-arrow.svg);
+				position: absolute;
+				left: -50px;
+			}
+		}
+	}
+}
+.counters {
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 69px 500px 60px 500px;
+	background: linear-gradient(to right, #211b19, #4e3427);
+	&-item {
+		display: flex;
+		flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 171px;
+        &::after {
+            content: "";
+            display: block;
+            width: 30px;
+            border-bottom: 2px solid #c7b299;
+        }
+	}
+	&-icon {
+        fill:#c7b299;
+        margin: 0 0 15px 0;
+	}
+	&-meter {
+		.txt(Montserrat-ExtraLight, 48px, 200);
+		color: #c7b299;
+        margin: 0 0 10px 0;
+    }
+	&-title {
+		.txt(Montserrat-Light, 14px, 300);
+		color: #c7b299;
+		padding: 0;
+        margin: 0 0 15px 0;
+	}
+}
+>>>>>>> Stashed changes
