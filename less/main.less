@@ -69,7 +69,7 @@ body {
         flex-wrap: wrap;
         padding: 0 225px;
         &-logo {
-						outline: none;
+            outline: none;
             width: 183px;
             height: 56px;
             margin: 0;
@@ -590,9 +590,18 @@ body {
             margin: 0 0 40px 0;
             padding: 15px;
             box-sizing: border-box;
+            border: none;
+            outline: none;
+            color: #fff;
+            &:hover{
+             color: #c7b299;
+            }
+            &:active{
+             color: #fff;
+            }
 		}
 		&-icon-play {
-			fill: #fff;
+			fill: currentColor;
 		}
 		&-title {
 			.txt(Raleway-Medium, 30px, 500);
@@ -659,6 +668,7 @@ body {
 				background-image: url(../img/li-arrow.svg);
 				position: absolute;
 				left: -50px;
+                    top: 6px;
 			}
 		}
 	}
@@ -699,3 +709,46 @@ body {
         margin: 0 0 15px 0;
 	}
 }
+//<!-- 
+//элемент {
+//    width: 105.75px;
+//    height: 105.75px;
+//}
+//.controlsSpacerStack:hover > .clickToPlay, .clickToPlay:hover {
+//    opacity: 0.55;
+//}
+//.clickToPlay {
+//    min-width: var(--clickToPlay-size);
+//    min-height: var(--clickToPlay-size);
+//    border-radius: 50%;
+//    background-image: url(chrome://global/skin/media/playButton.svg);
+//    background-repeat: no-repeat;
+//    background-position: 54% 50%;
+//    background-size: 40% 40%;
+//    background-color: #1a1a1a;
+//    -moz-context-properties: fill;
+//    fill: #fff;
+//    opacity: 0.8;
+//    position: relative;
+//    top: 20px;
+//    display: none;
+//}
+//.controlsContainer {
+//    --clickToPlay-size: 48px;
+//    --button-size: 30px;
+//    --timer-size: 40px;
+//    --timer-long-size: 60px;
+//    --track-size: 5px;
+//    --thumb-size: 13px;
+//    --label-font-size: 13px;
+//    --pip-toggle-padding: 5px;
+//    --pip-toggle-icon-width-height: 16px;
+//    --pip-toggle-translate-x: calc(100% - var(--pip-toggle-icon-width-height) - 2 * var(--pip-toggle-padding));
+//}
+//.videocontrols {
+//    writing-mode: horizontal-tb;
+//    direction: ltr;
+//    text-align: left;
+//    list-style-image: none !important;
+//    font: normal normal normal 100%/normal sans-serif !important;
+//    white-space: normal !important; -->
