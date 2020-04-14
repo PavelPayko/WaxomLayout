@@ -1,55 +1,46 @@
 @font-face {
   font-family: 'Raleway-Regular';
   src: url('../fonts/Raleway/Raleway-Regular.ttf') format("truetype");
-  font-weight: Regular;
   font-style: normal;
 }
 @font-face {
   font-family: 'Raleway-Medium';
   src: url('../fonts/Raleway/Raleway-Medium.ttf') format("truetype");
-  font-weight: Medium;
   font-style: normal;
 }
 @font-face {
   font-family: 'Raleway-Regular';
   src: url('../fonts/Raleway/Raleway-Regular.ttf') format("truetype");
-  font-weight: Regular;
   font-style: normal;
 }
 @font-face {
   font-family: 'Raleway-SemiBold';
   src: url('../fonts/Raleway/Raleway-SemiBold.ttf') format("truetype");
-  font-weight: SemiBold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Raleway-ExtraBold';
   src: url('../fonts/Raleway/Raleway-ExtraBold.ttf') format("truetype");
-  font-weight: ExtraBold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Montserrat-Light';
   src: url('../fonts/Montserrat/Montserrat-Light.ttf') format("truetype");
-  font-weight: Light;
   font-style: normal;
 }
 @font-face {
   font-family: 'Montserrat-ExtraLight';
   src: url('../fonts/Montserrat/Montserrat-ExtraLight.ttf') format("truetype");
-  font-weight: ExtraLight;
   font-style: normal;
 }
 @font-face {
   font-family: 'Montserrat-Regular';
   src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format("truetype");
-  font-weight: Regular;
   font-style: normal;
 }
 @font-face {
   font-family: 'Raleway-Bold';
   src: url('../fonts/Raleway/Raleway-Bold.ttf') format("truetype");
-  font-weight: Bold;
   font-style: normal;
 }
 body {
@@ -627,14 +618,18 @@ body {
   margin: 0 0 40px 0;
   padding: 15px;
   box-sizing: border-box;
-  outline: none;
   border: none;
+  outline: none;
+  color: #fff;
 }
-.video__infobox-play:hover .video__infobox-icon-play {
-  fill: #555555;
+.video__infobox-play:hover {
+  color: #c7b299;
+}
+.video__infobox-play:active {
+  color: #fff;
 }
 .video__infobox-icon-play {
-  fill: #fff;
+  fill: currentColor;
 }
 .video__infobox-title {
   font-family: Raleway-Medium;

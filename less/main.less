@@ -582,14 +582,18 @@ body {
             margin: 0 0 40px 0;
             padding: 15px;
             box-sizing: border-box;
-            outline: none;
             border: none;
-            &:hover .video__infobox-icon-play{
-                fill: @gray;
+            outline: none;
+            color: #fff;
+            &:hover{
+             color: #c7b299;
+            }
+            &:active{
+             color: #fff;
             }
 		}
 		&-icon-play {
-			fill: #fff;
+			fill: currentColor;
 		}
 		&-title {
 			.txt(Raleway-Medium, 30px, 500);
@@ -1006,11 +1010,7 @@ body {
                 margin: 0 10px 0 0;
             }
         }       
-        
-
     }
-
-
 }
 .copyright {
     background-color: #111111;
