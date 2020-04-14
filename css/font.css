@@ -40,3 +40,15 @@
   font-weight: ExtraLight;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format("truetype");
+  font-weight: Regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('../fonts/Raleway/Raleway-Bold.ttf') format("truetype");
+  font-weight: Bold;
+  font-style: normal;
+}
