@@ -701,7 +701,6 @@ body {
 		}
 	}
 }
-
 .counters {
 	box-sizing: border-box;
 	display: flex;
@@ -1310,13 +1309,13 @@ body {
         }
     }
     .realization-ideas {
-        padding: 40px;
+        padding: 40px 40px 0 40px;
         &__text {
             padding: 0;
         }
         &__content {
             width: auto;
-            margin: 0 auto;
+            margin: 0px auto;
             &-img {
                 &:hover {
                 transform: scale(0.8);
@@ -1381,8 +1380,53 @@ body {
         &-link {
             margin: 0;
             transform: scale(0.8);
+            &:hover {
+                transform: scale(1);
+            }
         }
-
+    }
+    .footer {
+        &__widget {
+            
+            height: auto;
+            &-wrp {
+                flex-direction: column;
+            }
+            &-link {
+                &:nth-child(1) {
+                    margin: 0 auto 10px auto;
+                    transition: transform 0.2s;
+                    &:hover{
+                        transform: scale(1.2);
+                        transition: transform 0.2s;
+                    }
+                }
+                &:nth-child(2) {
+                    margin: 0 auto 10px auto;
+                    transition: transform 0.2s;
+                    &:hover{
+                        transform: scale(1.2);
+                        transition: transform 0.2s;
+                    }
+                }
+                &:nth-child(3) {
+                    margin: 0 auto 10px auto;
+                    transition: transform 0.2s;
+                    &:hover{
+                        transform: scale(1.2);
+                        transition: transform 0.2s;
+                    }
+                }
+                &:nth-child(4) {
+                    margin: 0 auto;
+                    transition: transform 0.2s;
+                    &:hover{
+                        transform: scale(1.2);
+                        transition: transform 0.2s;
+                    }
+                }         
+            }
+        }
     }
     .copyright {
         padding: 20px;
@@ -1390,9 +1434,7 @@ body {
         &__wrp {
             margin: 0;
         }
-
     }
-   
 }
 @media ( max-width: 920px) {
     .main-header {
@@ -1453,7 +1495,6 @@ body {
         &:focus {
             width: 225px;
         }
-
     }
     .services {
         padding: 40px 0;
@@ -1601,7 +1642,6 @@ body {
             }
             
         }
-
     }
     .footer {
         &__posts {
@@ -1617,8 +1657,6 @@ body {
             margin: 0 0 20px 0;
         }
     }
-   
-
 }
 
 
@@ -1684,10 +1722,8 @@ body {
         &-check:checked ~ .main-header-nav-wrp-list {
             height: auto;
             visibility: visible;
-        }
-            
+        }           
     }
-
     .main-header {
         background-position: top;
         padding: 20px;
@@ -1705,8 +1741,7 @@ body {
                     line-height: 40px;
                     }
                 }
-
-            }       
+            }     
         }
         &-content-wrp {
             display: none;
@@ -1714,7 +1749,6 @@ body {
         &-pagination {
             display: none;
         }
-
     }
     .basket {
         margin: 0 20px;
@@ -1724,7 +1758,6 @@ body {
         &:focus {
             width: 150px;
         }
-
     }
     .services {
        &-item {
@@ -1755,15 +1788,12 @@ body {
                 }
             }
         }
-
-
     }
     .wordpress {
         display: none;
         &-box {
             display: none;
         }
-
     }
     .latest-projects {
         padding: 40px 20px;
@@ -1781,8 +1811,7 @@ body {
                 &:nth-child(6) {
                     display: none;
                 }
-            }
-            
+            }    
         }
         &__nav {
             flex-direction: column;
@@ -1791,9 +1820,6 @@ body {
             }
         }
     }
-    .video {
-        
-    }
     .mobile {
         padding: 40px 20px;
         &__img {
@@ -1801,7 +1827,6 @@ body {
             height: 100%;
         }
     }
-    .mobile__content {}
     .counters {
         display: none;
     }
@@ -1826,12 +1851,17 @@ body {
             transform: scale(0.6);
             &:hover {
                 transform: scale(0.6); 
+                opacity: 0.5;
+                transition: opacity 0.2s;
+            }
+            &:active {
+                opacity: 1;
+                transition: opacity 0.2s;
             }
             &:last-child {
                 margin: 0;
             }
-        }
-        
+        }       
     }
     .footer {
         padding: 40px 20px;
@@ -1855,5 +1885,4 @@ body {
             flex-wrap: wrap;
         }
     }
-
 }
