@@ -466,7 +466,8 @@ body {
 		justify-content: center;
 		margin: 0;
         &-link {
-			text-decoration: none;
+            text-decoration: none;
+            background-color: #fff;
 			border-radius: 3px;
 			border: solid 1px #ebebeb;
 			box-sizing: border-box;
@@ -479,6 +480,11 @@ body {
             &:hover {
                 background-color: #998675;
                 color: #fff;
+                transition: color 0.2s; 
+            }
+            &:active {
+                background-color: #fff;
+                color: @lightgray;
                 transition: color 0.2s; 
             }
         }
